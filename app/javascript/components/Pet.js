@@ -7,7 +7,7 @@ class Pet extends Component {
 
     return (
       <Col md={4} sm={6} >
-        <Thumbnail src={pet.picture_url} >
+        <Thumbnail src={pet.picture_url} href={"/pets/" + pet.id}>
           <h1>{pet.name}</h1>
         </Thumbnail>
       </Col>
